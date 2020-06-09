@@ -23,7 +23,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_plugin_pdf_viewer:
+  flutter_full_pdf_viewer: ^1.0.4
+  path_provider: ^0.4.1
+  pspdfkit_flutter:
+    git:
+      url: git://github.com/PSPDFKit/pspdfkit-flutter.git
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,9 +53,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - PDFs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,5 +1,10 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
+import 'package:path_provider/path_provider.dart';
+
+import 'package:pspdfkit_flutter/pspdfkit.dart';
 
 import 'ghflutter.dart';
 import 'strings.dart';
@@ -36,6 +41,8 @@ class _SecondRouteState extends State<SecondRoute> {
   @override
   void initState() {
     super.initState();
+    Pspdfkit.setLicenseKey("HmQTOnpLMtNGjLovoUsUY3OH/EJJQ/SyZzs0wUwq8dc5rHdAajWb6v9Dgdk2mSsZZ85FPqvQGDJMANhnyzdrhAK8srR50exd5Iw3unfKPsB8+F1ixYa9HuHIjsw0y7RwA6FLPV/hdigDE+K3qeZMal0Pwfhz3HqMJgARjY715U8Oh47An9ycg2/AW2frufAkZ8LD4SqYuiBGiwgg5m4/6UV0jyWOuLbxJNoWJSOfJoS8KgZVJEll07ywCKTFtCAzxHUTRiPBpMAo7TbJgf9fshm0ewew4YpKnpKn+VedMUiNoQuZyzU9dlMlXElEPRmwu5JxkUkSJf1h7k7Cw7502iijRfzo/rLTonr2gaPPgxfCvyBuYhfTRmVx7gBmCwRbtxQNnnGZQ7hk9+PrTHSWDKuP9p8OMbjhIl1nFR0QkTcWoMLBbWDd1yYYVoGZjWSM");
+
     _initPdf();
   }
 

@@ -36,9 +36,6 @@ class SecondRoute extends StatefulWidget {
 
 class _SecondRouteState extends State<SecondRoute> {
 
-  String url = "http://willwoodard.com/meritbadge/law.pdf";
-  bool _loading;
-
   Future<String> prepareTestPdf() async {
     final ByteData bytes =
     await DefaultAssetBundle.of(context).load(_documentPath);
@@ -60,17 +57,6 @@ class _SecondRouteState extends State<SecondRoute> {
 
   }
 
-  /*_initPdf() async {
-    setState(() {
-      _loading = true;
-    });
-    final doc = await PDFDocument.fromURL(url);
-    setState(() {
-      _doc = doc;
-      _loading = false;
-    });
-  }*/
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,8 +68,13 @@ class _SecondRouteState extends State<SecondRoute> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RaisedButton(
-                onPressed: () {},
-                  child: const Text('Open PDF with full_pdf_viewer'),
+                onPressed: () => {
+                  // We need to prepare the test PDF, and then we can display the PDF.
+                  prepareTestPdf().then((path) {
+                    Pspdfkit.present(path);
+                  })
+                },
+                child: const Text('Open PDF with PSPDFKit'),
               ),
             ],
         )
@@ -91,3 +82,5 @@ class _SecondRouteState extends State<SecondRoute> {
     );
   }
 }
+
+

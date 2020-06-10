@@ -2,6 +2,8 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
+import 'package:dio/dio.dart';
+import 'package:path_provider/path_provider.dart';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
 
@@ -10,7 +12,7 @@ import 'package:pspdfkit_flutter/pspdfkit.dart';
 import 'ghflutter.dart';
 import 'strings.dart';
 
-const String _documentPath = 'PDFs/pets.pdf';
+const String _documentPath = 'PDFs/archery.pdf';
 
 void main() => runApp(GHFlutterApp());
 
@@ -37,34 +39,54 @@ class SecondRoute extends StatefulWidget {
 
 class _SecondRouteState extends State<SecondRoute> {
 
-
+  final PDFUrl = "http://willwoodard.com/meritbadge/archery.pdf";
+  bool downloading = false;
+  var progressString = "";
 
   Future<String> prepareTestPdf() async {
-    final ByteData bytes =
-    await DefaultAssetBundle.of(context).load(_documentPath);
-    final Uint8List list = bytes.buffer.asUint8List();
 
-    //WARNING - Don't think TemporaryDirectory will work as it is not backed up
-    final tempDir = await getApplicationDocumentsDirectory();
-    final tempDocumentPath = '${tempDir.path}/$_documentPath';
+    Dio dio = Dio();
+
+    /*final ByteData bytes =
+    await DefaultAssetBundle.of(context).load(_documentPath);
+    final Uint8List list = bytes.buffer.asUint8List();*/
+
+    final Dir = await getApplicationDocumentsDirectory();
+    final DocumentPath = '${Dir.path}/$_documentPath';
 
     //check to see if the file is already there
     //if so, don't move from folder
-    if (await File(tempDocumentPath).exists()) {
+    if (await File(DocumentPath).exists()) {
       print("File exists");
 
     } else {
       print("File don't exist");
 
-      final file = await File(tempDocumentPath).create(recursive: true);
-      file.writeAsBytesSync(list);
+      final file = await File(DocumentPath).create(recursive: true);
+      //file.writeAsBytesSync(list);
 
-      print("temp");
-      print(tempDocumentPath);
+      try {
 
+        await dio.download(PDFUrl, DocumentPath, onReceiveProgress: (rec,total){
+          print("Rec: $rec , Total: $total");
+
+          setState(() {
+            downloading = true;
+            progressString = ((rec/total)*100).toStringAsFixed(0) + "%";
+          });
+        });
+
+      } catch (e) {
+        print(e);
+      }
+
+      setState(() {
+        downloading = false;
+        progressString = "Completed";
+      });
     }
 
-    return tempDocumentPath;
+    return DocumentPath;
   }
 
 
@@ -91,6 +113,7 @@ class _SecondRouteState extends State<SecondRoute> {
         androidShowPrintAction: false,
         iOSRightBarButtonItems:['thumbnailsButtonItem', 'searchButtonItem', 'annotationButtonItem'],
         startPage: 4,
+        password: 'U2UaMFw5mSZsh95P',
       });
     });
   }
@@ -102,11 +125,28 @@ class _SecondRouteState extends State<SecondRoute> {
         title: Text(widget.title),
       ),
       body:  Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: downloading ?
+              Container (
+                height: 120.0,
+                width: 200.0,
+                child: Card(
+                  color: Colors.black,
+                  child: Column (
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      CircularProgressIndicator(),
+                      SizedBox(height: 10.0,),
+                      Text("Downloading Book: $progressString",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),)
+                    ],
+                  ),
+                ),
+              )
+              : Text("No Data"),
         )
-      ),
-    );
+      );
   }
 }
 

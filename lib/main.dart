@@ -12,8 +12,6 @@ import 'package:pspdfkit_flutter/pspdfkit.dart';
 import 'ghflutter.dart';
 import 'strings.dart';
 
-const String _documentPath = 'PDFs/archery.pdf';
-
 void main() => runApp(GHFlutterApp());
 
 class GHFlutterApp extends StatelessWidget {
@@ -39,11 +37,13 @@ class SecondRoute extends StatefulWidget {
 
 class _SecondRouteState extends State<SecondRoute> {
 
-  final PDFUrl = "http://willwoodard.com/meritbadge/archery.pdf";
   bool downloading = false;
   var progressString = "";
 
   Future<String> prepareTestPdf() async {
+
+    final PDFUrl = "http://willwoodard.com/meritbadge/${widget.bookname}.pdf";
+    final String _documentPath = 'PDFs/${widget.bookname}.pdf';
 
     Dio dio = Dio();
 
@@ -112,8 +112,9 @@ class _SecondRouteState extends State<SecondRoute> {
         androidShowShareAction: false,
         androidShowPrintAction: false,
         iOSRightBarButtonItems:['thumbnailsButtonItem', 'searchButtonItem', 'annotationButtonItem'],
-        startPage: 4,
+        startPage: 1,
         password: 'U2UaMFw5mSZsh95P',
+        showDocumentLabel: true,
       });
     });
   }

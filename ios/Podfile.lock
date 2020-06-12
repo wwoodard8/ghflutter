@@ -35,7 +35,7 @@ SPEC CHECKSUMS:
   flutter_full_pdf_viewer: 1b65139fc3236cde300ba6bea2a72669cb07f2e6
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   PSPDFKit: 8282bb978d2b07b1edf3ccc1f78e5241cbc65f1a
-  pspdfkit_flutter: 56e525a72619fce579635e07a3864d4f87d2fc1c
+  pspdfkit_flutter: eea35994ef96f982a5a94a67ac3e902d1a79a5d4
 
 PODFILE CHECKSUM: c3c4447a941faf19df25ca0a68742c5b27218286
 

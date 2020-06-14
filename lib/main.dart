@@ -39,6 +39,7 @@ class _SecondRouteState extends State<SecondRoute> {
 
   bool downloading = false;
   var progressString = "";
+  var progressAmount = 0.0;
 
   Future<String> prepareTestPdf() async {
 
@@ -131,16 +132,22 @@ class _SecondRouteState extends State<SecondRoute> {
                 height: 120.0,
                 width: 200.0,
                 child: Card(
-                  color: Colors.black,
+                  color: Colors.white,
                   child: Column (
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      CircularProgressIndicator(),
-                      SizedBox(height: 10.0,),
-                      Text("Downloading Book: $progressString",
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),)
+                      Text(
+                        'Downloading...'
+                      ),
+                      Text(
+                        ' '
+                      ),
+                      CircularProgressIndicator(
+                        value: progressAmount,
+                        valueColor:
+                        AlwaysStoppedAnimation<Color>
+                          (Colors.blue),
+                      ),
                     ],
                   ),
                 ),

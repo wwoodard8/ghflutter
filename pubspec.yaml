@@ -48,8 +48,8 @@ flutter_icons:
   android: true
   image_path_ios: "LauncherIcons/meritbadgelauncher.png"
   image_path_android: "LauncherIcons/meritbadgelauncher.png"
-  adaptive_icon_background: "LauncherIcons/meritbadgelauncherbackground.png"
-  adaptive_icon_foreground: "LauncherIcons/meritbadgelauncherforeground.png"
+  adaptive_icon_background: "LauncherIcons/meritbadgelauncher.png"
+  adaptive_icon_foreground: "LauncherIcons/meritbadgelauncher.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
@@ -137,14 +138,10 @@ class _SecondRouteState extends State<SecondRoute> {
                       Text(
                         'Downloading...'
                       ),
-                      Text(
-                        ' '
-                      ),
                       CircularProgressIndicator(
-                        value: progressAmount,
                         valueColor:
-                        AlwaysStoppedAnimation<Color>
-                          (Colors.blue),
+                        AlwaysStoppedAnimation<Color>(Colors.red),
+                        value: progressAmount,
                       ),
                     ],
                   ),

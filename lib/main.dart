@@ -105,7 +105,6 @@ class _SecondRouteState extends State<SecondRoute> {
 
     //prepare and present pdf
     print("hello");
-    //PdfActivityConfiguration.setEnabledShareFeatures(ShareFeatures.none())
     prepareTestPdf().then((path) {
       Pspdfkit.present(path, {
         enableAnnotationEditing: true,

@@ -111,7 +111,7 @@ class _SecondRouteState extends State<SecondRoute> {
         androidShowShareAction: false,
         androidShowPrintAction: false,
         iOSRightBarButtonItems:['thumbnailsButtonItem', 'searchButtonItem', 'annotationButtonItem'],
-        startPage: 1,
+        //startPage: 1,
         password: 'U2UaMFw5mSZsh95P',
         showDocumentLabel: true,
       });
@@ -122,7 +122,7 @@ class _SecondRouteState extends State<SecondRoute> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Back to Merit Badge List"),
       ),
       body:  Center(
           child: downloading ?
@@ -146,7 +146,7 @@ class _SecondRouteState extends State<SecondRoute> {
                   ),
                 ),
               )
-              : Text("No Data"),
+              : Text(""),
         )
       );
   }

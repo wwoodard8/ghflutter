@@ -47,8 +47,7 @@ class GHFlutterState extends State<GHFlutter> {
       final membersJSON = json.decode(response);
 
       for (var memberJSON in membersJSON) {
-        final member = Member(memberJSON["title"], memberJSON["patch_url"],
-            memberJSON["bookname"]);
+        final member = Member(memberJSON["title"], memberJSON["bookname"]);
         _members.add(member);
       }
     });

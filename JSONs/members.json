@@ -1,157 +1,126 @@
 [
   {
     "bookname": "americanbusiness",
-    "title": "American Business",
-    "patch_url": "http://willwoodard.com/meritbadge/americanbusiness.png"
+    "title": "American Business"
   },
   {
     "bookname": "americancultures",
-    "title": "American Cultures",
-    "patch_url": "http://willwoodard.com/meritbadge/americancultures.png"
+    "title": "American Cultures"
   },
 {
   "bookname": "americanheritage",
-  "title": "American Heritage",
-  "patch_url": "http://willwoodard.com/meritbadge/americanheritage.png"
+  "title": "American Heritage"
 },
 {
   "bookname": "americanlabor",
-  "title": "American Labor",
-  "patch_url": "http://willwoodard.com/meritbadge/americanlabor.png"
+  "title": "American Labor"
 },
 {
   "bookname": "animalscience",
-  "title": "Animal Science",
-  "patch_url": "http://willwoodard.com/meritbadge/animalscience.png"
+  "title": "Animal Science"
 },
 {
   "bookname": "archaeology",
-  "title": "Archaeology",
-  "patch_url": "http://willwoodard.com/meritbadge/archaeology.png"
+  "title": "Archaeology"
 },
 {
   "bookname": "archery",
-  "title": "Archery",
-  "patch_url": "http://willwoodard.com/meritbadge/archery.png"
+  "title": "Archery"
 },
 {
   "bookname": "architechture",
-  "title": "Architecture",
-  "patch_url": "http://willwoodard.com/meritbadge/architechture.png"
+  "title": "Architecture"
 },
 {
   "bookname": "art",
-  "title": "Art",
-  "patch_url": "http://willwoodard.com/meritbadge/art.png"
+  "title": "Art"
 },
 {
   "bookname": "astronomy",
-  "title": "Astronomy",
-  "patch_url": "http://willwoodard.com/meritbadge/astronomy.png"
+  "title": "Astronomy"
 },
 {
   "bookname": "athletics",
-  "title": "Athletics",
-  "patch_url": "http://willwoodard.com/meritbadge/athletics.png"
+  "title": "Athletics"
 },
 {
   "bookname": "automotivemaintenance",
-  "title": "Automotive Maintenance",
-  "patch_url": "http://willwoodard.com/meritbadge/automotivemaintenance.png"
+  "title": "Automotive Maintenance"
 },
 {
   "bookname": "aviation",
-  "title": "Aviation",
-  "patch_url": "http://willwoodard.com/meritbadge/aviation.png"
+  "title": "Aviation"
 },
 {
   "bookname": "backpacking",
-  "title": "Backpacking",
-  "patch_url": "http://willwoodard.com/meritbadge/backpacking.png"
+  "title": "Backpacking"
 },
 {
   "bookname": "basketry",
-  "title": "Basketry",
-  "patch_url": "http://willwoodard.com/meritbadge/basketry.png"
+  "title": "Basketry"
 },
 {
   "bookname": "birdstudy",
-  "title": "Birdstudy",
-  "patch_url": "http://willwoodard.com/meritbadge/birdstudy.png"
+  "title": "Birdstudy"
 },
 {
   "bookname": "camping",
-  "title": "Camping",
-  "patch_url": "http://willwoodard.com/meritbadge/camping.png"
+  "title": "Camping"
 },
 {
   "bookname": "canoeing",
-  "title": "Canoeing",
-  "patch_url": "http://willwoodard.com/meritbadge/canoeing.png"
+  "title": "Canoeing"
 },
 {
   "bookname": "chemistry",
-  "title": "Chemistry",
-  "patch_url": "http://willwoodard.com/meritbadge/chemistry.png"
+  "title": "Chemistry"
 },
 {
   "bookname": "chess",
-  "title": "Chess",
-  "patch_url": "http://willwoodard.com/meritbadge/chess.png"
+  "title": "Chess"
 },
 {
   "bookname": "citizencom",
-  "title": "Citizenship in the Community",
-  "patch_url": "http://willwoodard.com/meritbadge/citizencom.png"
+  "title": "Citizenship in the Community"
 },
 {
   "bookname": "citizennat",
-  "title": "Citizenship in the Nation",
-  "patch_url": "http://willwoodard.com/meritbadge/citizennat.png"
+  "title": "Citizenship in the Nation"
 },
 {
   "bookname": "citizenshipwor",
-  "title": "Citizenship in the World",
-  "patch_url": "http://willwoodard.com/meritbadge/citizenshipwor.png"
+  "title": "Citizenship in the World"
 },
 {
   "bookname": "climbing",
-  "title": "Climbing",
-  "patch_url": "http://willwoodard.com/meritbadge/climbing.png"
+  "title": "Climbing"
 },
 {
   "bookname": "coincollecting",
-  "title": "Coin Collecting",
-  "patch_url": "http://willwoodard.com/meritbadge/coincollecting.png"
+  "title": "Coin Collecting"
 },
 {
   "bookname": "collections",
-  "title": "Collections",
-  "patch_url": "http://willwoodard.com/meritbadge/collections.png"
+  "title": "Collections"
 },
 {
   "bookname": "communication",
-  "title": "Communication",
-  "patch_url": "http://willwoodard.com/meritbadge/communication.png"
+  "title": "Communication"
 },
 {
   "bookname": "compositematerials",
-  "title": "Composite Materials",
-  "patch_url": "http://willwoodard.com/meritbadge/compositematerials.png"
+  "title": "Composite Materials"
 },
 {
   "bookname": "computers",
-  "title": "Computers",
-  "patch_url": "http://willwoodard.com/meritbadge/computers.png"
+  "title": "Computers"
 },
 {
   "bookname": "cooking",
-  "title": "Cooking",
-  "patch_url": "http://willwoodard.com/meritbadge/cooking.png"
+  "title": "Cooking"
 },
 {
   "bookname": "firstaid",
-  "title": "First Aid",
-  "patch_url": "http://willwoodard.com/meritbadge/firstaid.png"
+  "title": "First Aid"
 }
 ]

@@ -1,0 +1,126 @@
+[
+  {
+    "bookname": "americanbusiness",
+    "title": "American Business"
+  },
+  {
+    "bookname": "americancultures",
+    "title": "American Cultures"
+  },
+{
+  "bookname": "americanheritage",
+  "title": "American Heritage"
+},
+{
+  "bookname": "americanlabor",
+  "title": "American Labor"
+},
+{
+  "bookname": "animalscience",
+  "title": "Animal Science"
+},
+{
+  "bookname": "archaeology",
+  "title": "Archaeology"
+},
+{
+  "bookname": "archery",
+  "title": "Archery"
+},
+{
+  "bookname": "architechture",
+  "title": "Architecture"
+},
+{
+  "bookname": "art",
+  "title": "Art"
+},
+{
+  "bookname": "astronomy",
+  "title": "Astronomy"
+},
+{
+  "bookname": "athletics",
+  "title": "Athletics"
+},
+{
+  "bookname": "automotivemaintenance",
+  "title": "Automotive Maintenance"
+},
+{
+  "bookname": "aviation",
+  "title": "Aviation"
+},
+{
+  "bookname": "backpacking",
+  "title": "Backpacking"
+},
+{
+  "bookname": "basketry",
+  "title": "Basketry"
+},
+{
+  "bookname": "birdstudy",
+  "title": "Birdstudy"
+},
+{
+  "bookname": "camping",
+  "title": "Camping"
+},
+{
+  "bookname": "canoeing",
+  "title": "Canoeing"
+},
+{
+  "bookname": "chemistry",
+  "title": "Chemistry"
+},
+{
+  "bookname": "chess",
+  "title": "Chess"
+},
+{
+  "bookname": "citizencom",
+  "title": "Citizenship in the Community"
+},
+{
+  "bookname": "citizennat",
+  "title": "Citizenship in the Nation"
+},
+{
+  "bookname": "citizenshipwor",
+  "title": "Citizenship in the World"
+},
+{
+  "bookname": "climbing",
+  "title": "Climbing"
+},
+{
+  "bookname": "coincollecting",
+  "title": "Coin Collecting"
+},
+{
+  "bookname": "collections",
+  "title": "Collections"
+},
+{
+  "bookname": "communication",
+  "title": "Communication"
+},
+{
+  "bookname": "compositematerials",
+  "title": "Composite Materials"
+},
+{
+  "bookname": "computers",
+  "title": "Computers"
+},
+{
+  "bookname": "cooking",
+  "title": "Cooking"
+},
+{
+  "bookname": "firstaid",
+  "title": "First Aid"
+}
+]

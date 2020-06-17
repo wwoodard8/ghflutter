@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/services.dart';
 import 'package:ghflutter/main.dart';
 import 'package:http/http.dart' as http;
 
@@ -38,14 +39,15 @@ class GHFlutterState extends State<GHFlutter> {
   }
 
   _loadData() async {
-    String dataURL = "http://willwoodard.com/meritbadge/members.json";
-    http.Response response = await http.get(dataURL);
+    //String dataURL = "http://willwoodard.com/meritbadge/members.json";
+    final String _documentPath = 'JSONs/members.json';
+    String response = await rootBundle.loadString(_documentPath);
+
     setState(() {
-      final membersJSON = json.decode(response.body);
+      final membersJSON = json.decode(response);
 
       for (var memberJSON in membersJSON) {
-        final member = Member(memberJSON["title"], memberJSON["patch_url"],
-            memberJSON["bookname"]);
+        final member = Member(memberJSON["title"], memberJSON["bookname"]);
         _members.add(member);
       }
     });
@@ -60,8 +62,8 @@ class GHFlutterState extends State<GHFlutter> {
       child: ListTile(
         title: Text("${_members[i].title}", style: TextStyle(fontSize: 25.0)),
         leading: CircleAvatar(
-          backgroundColor: Colors.green,
-          backgroundImage: NetworkImage(_members[i].patchURL),
+          backgroundColor: Colors.black,
+          backgroundImage: AssetImage('PatchImages/${_members[i].bookname}.png'),
           radius: 30.0,
         ),
         onTap: () {

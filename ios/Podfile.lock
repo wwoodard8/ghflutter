@@ -1,55 +1,42 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_plugin_pdf_viewer (1.0.5):
+  - flutter_full_pdf_viewer (1.0.1):
     - Flutter
-  - FMDB (2.7.5):
-    - FMDB/standard (= 2.7.5)
-  - FMDB/standard (2.7.5)
   - path_provider (0.0.1):
     - Flutter
-  - path_provider_linux (0.0.1):
+  - PSPDFKit (9.3.3):
+    - PSPDFKit/Core (= 9.3.3)
+  - PSPDFKit/Core (9.3.3)
+  - pspdfkit_flutter (0.0.1):
     - Flutter
-  - path_provider_macos (0.0.1):
-    - Flutter
-  - sqflite (0.0.1):
-    - Flutter
-    - FMDB (~> 2.7.2)
+    - PSPDFKit
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
-  - flutter_plugin_pdf_viewer (from `.symlinks/plugins/flutter_plugin_pdf_viewer/ios`)
+  - flutter_full_pdf_viewer (from `.symlinks/plugins/flutter_full_pdf_viewer/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
-  - path_provider_linux (from `.symlinks/plugins/path_provider_linux/ios`)
-  - path_provider_macos (from `.symlinks/plugins/path_provider_macos/ios`)
-  - sqflite (from `.symlinks/plugins/sqflite/ios`)
-
-SPEC REPOS:
-  trunk:
-    - FMDB
+  - PSPDFKit (from `https://customers.pspdfkit.com/cocoapods/TRIAL-YNtSXnS1AtCP0zmnEDmvKKG9fgnANrR4Yf59RPlgLsYwRIBWiO3fozswabWz5nkX63FqJcPvbx_ZkBBA_SHKYzXUDYmwH5SBF9kI_bTtRqE/pspdfkit/latest.podspec`)
+  - pspdfkit_flutter (from `.symlinks/plugins/pspdfkit_flutter/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
-  flutter_plugin_pdf_viewer:
-    :path: ".symlinks/plugins/flutter_plugin_pdf_viewer/ios"
+  flutter_full_pdf_viewer:
+    :path: ".symlinks/plugins/flutter_full_pdf_viewer/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
-  path_provider_linux:
-    :path: ".symlinks/plugins/path_provider_linux/ios"
-  path_provider_macos:
-    :path: ".symlinks/plugins/path_provider_macos/ios"
-  sqflite:
-    :path: ".symlinks/plugins/sqflite/ios"
+  PSPDFKit:
+    :podspec: https://customers.pspdfkit.com/cocoapods/TRIAL-YNtSXnS1AtCP0zmnEDmvKKG9fgnANrR4Yf59RPlgLsYwRIBWiO3fozswabWz5nkX63FqJcPvbx_ZkBBA_SHKYzXUDYmwH5SBF9kI_bTtRqE/pspdfkit/latest.podspec
+  pspdfkit_flutter:
+    :path: ".symlinks/plugins/pspdfkit_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_plugin_pdf_viewer: 7d8e3a03f42d346b2af8840f980b7de95ad5732a
-  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
-  path_provider_linux: 4d630dc393e1f20364f3e3b4a2ff41d9674a84e4
-  path_provider_macos: f760a3c5b04357c380e2fddb6f9db6f3015897e0
-  sqflite: 4001a31ff81d210346b500c55b17f4d6c7589dd0
+  flutter_full_pdf_viewer: 1b65139fc3236cde300ba6bea2a72669cb07f2e6
+  path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
+  PSPDFKit: 8282bb978d2b07b1edf3ccc1f78e5241cbc65f1a
+  pspdfkit_flutter: eea35994ef96f982a5a94a67ac3e902d1a79a5d4
 
-PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+PODFILE CHECKSUM: c3c4447a941faf19df25ca0a68742c5b27218286
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3
